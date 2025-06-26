@@ -1,0 +1,37 @@
+TASK 1 - SELENIUM WEBDRIVER THEORY
+
+===========================================
+DIFFERENCE BETWEEN driver.get() AND driver.navigate().to()
+===========================================
+
+QUESTION: Explain the difference between driver.get() and driver.navigate().to() in Selenium WebDriver
+
+ANSWER:
+
+1. driver.get() METHOD
+   - Primary method for navigating to a webpage
+   - Loads a new page completely and waits for full page load
+   - Clears browser history and cache for the session
+   - More reliable for initial page loads
+   - Syntax: driver.get("https://www.amazon.in");
+
+2. driver.navigate().to() METHOD
+   - Part of Navigation interface for browser navigation
+   - Navigates to page but maintains browser history
+   - May not wait for complete page load
+   - Allows use of back(), forward(), refresh() methods
+   - Syntax: driver.navigate().to("https://www.amazon.in");
+
+KEY DIFFERENCES:
+- History Management: navigate().to() maintains history, get() doesn't
+- Page Loading: get() ensures complete page load
+- Additional Methods: navigate() provides back(), forward(), refresh()
+- Performance: get() is generally more reliable for initial loads
+
+WHEN TO USE:
+- Use driver.get(): For initial page loads, guaranteed loading
+- Use driver.navigate().to(): When maintaining history is needed
+
+===========================================
+DEVELOPED BY: VINAYKUMAR NAKKA
+===========================================
